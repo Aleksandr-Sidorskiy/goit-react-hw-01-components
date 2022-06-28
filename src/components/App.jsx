@@ -1,16 +1,25 @@
+import { UserProfile } from "./userProfile/UserProfile";
+import user from "../data/user";
+import data from '../data/data';
+import { Statistics } from "./Statistics/Statistics";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-       goit-react-hw-01-components 
+    <div>
+        <div>
+          <UserProfile 
+            username={user.username}
+            tag={user.tag}
+            location={user.location}
+            avatar={user.avatar}
+            stats={user.stats}
+          />
+      </div>
+      <Statistics title="Upload stats" stats={data} />
+        
+      <Statistics stats={data} />
     </div>
-  );
+  
+  )
+  
 };

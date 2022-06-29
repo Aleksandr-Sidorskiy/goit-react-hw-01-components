@@ -31,20 +31,14 @@ export const UserProfile = ({username, tag, location, avatar, stats: { followers
 </div>
 }
 
-UserProfile.protType = {
-    username: PropTypes.string,
-    tag: PropTypes.string, location: PropTypes.string,
+UserProfile.propTypes = {
     avatar:PropTypes.string,
-}
-
-// UserProfile.propTypes = {
-//     avatar:PropTypes.string,
-//     username: PropTypes.string,
-//     tag: PropTypes.string,
-//     location: PropTypes.string,
-//     followers: PropTypes.number,
-//     views: PropTypes.number,
-//     likes:PropTypes.number
+    username: PropTypes.string,
+    tag: PropTypes.string,
+    location: PropTypes.string,
+    followers: PropTypes.number,
+    views: PropTypes.number,
+    likes:PropTypes.number
     
 
-// }
+}

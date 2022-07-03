@@ -5,13 +5,13 @@ import data from '../data/data';
 import { Statistics } from "./Statistics/Statistics";
 // ====================================================
 import friends from "../data/friends";
-import { Friends } from "./FriendListItem/FriendListItem";
+import { FriendList } from "./FriendListItem/FrendList";
 // ====================================================
 import transactions from "../data/transactions";
 import { Transaction } from "./TransactionHistory/Transition";
 // ====================================================
 
-export const App = (p) => {
+export const App = () => {
   return (
     <div className="container">
       <div className="section">
@@ -31,7 +31,7 @@ export const App = (p) => {
       </div>
 
       <div className="section">
-        <Friends friends={friends} />
+        <FriendList friends={friends }/>
       </div>
 
       <div className="section">
